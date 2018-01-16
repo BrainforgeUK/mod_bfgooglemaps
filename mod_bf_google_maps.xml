@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3" client="site" method="upgrade">
-	<name>Brainforge - GoogleMaps</name>
+	<name>GoogleMaps by BrainforgeUK</name>
   <creationDate>25 March 2017</creationDate>
   <author>Jonathan Brain</author>
   <authorEmail>brainforge@btinternet.com</authorEmail>
@@ -146,6 +146,6 @@
 
 
   <updateservers>
-    <server type="extension" priority="1" name="Brainforge, GoogleMaps">https://brainforge.co.uk/media/com_bfupdater/mod_bfgooglemaps.xml</server>
+    <server type="extension" priority="1" name="GoogleMaps by BrainforgeUK">https://brainforge.co.uk/media/com_bfupdater/mod_bfgooglemaps.xml</server>
   </updateservers>
 </extension>
