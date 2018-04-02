@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3" client="site" method="upgrade">
 	<name>GoogleMaps by BrainforgeUK</name>
-  <creationDate>25 March 2017</creationDate>
-  <author>Jonathan Brain</author>
-  <authorEmail>brainforge@btinternet.com</authorEmail>
-  <authorUrl>http://www.brainforge.co.uk</authorUrl>
-  <copyright>Copyright 2017-2018 Jonathan Brain. All rights reserved.</copyright>
-  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-  <version>4.0.1</version>
+	<creationDate>25 March 2017</creationDate>
+	<author>Jonathan Brain</author>
+	<authorEmail>brainforge@btinternet.com</authorEmail>
+	<authorUrl>http://www.brainforge.co.uk</authorUrl>
+	<copyright>Copyright 2017-2018 Jonathan Brain. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>4.0.2</version>
 	<description>MOD_BRAINFORGE_GOOGLEMAPS_XML_DESCRIPTION</description>
-	
+
 	<files>
 		<folder>tmpl</folder>
 		<filename module="mod_bf_google_maps">mod_bf_google_maps.php</filename>
@@ -20,133 +20,133 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_bf_google_maps.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_bf_google_maps.sys.ini</language>
 	</languages>
-	
+
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-        <field name="maps_apikey" type="text"
-               label="MOD_BRAINFORGE_GOOGLEMAPS_APIKEY_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_APIKEY_DESC" />
-        <field name="maps_height" type="text"
-               default="auto" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_HEIGHT_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_HEIGHT_DESC" />
-        <field name="maps_width" type="text"
-               default="auto" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_WIDTH_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_WIDTH_DESC" />
+				<field name="maps_apikey" type="text"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_APIKEY_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_APIKEY_DESC" />
+				<field name="maps_height" type="text"
+							 default="auto"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_HEIGHT_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_HEIGHT_DESC" />
+				<field name="maps_width" type="text"
+							 default="auto"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_WIDTH_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_WIDTH_DESC" />
 				<field name="maps_loctype"
-					type="radio"
-					class="btn-group"
-					default="0"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_LOCTYPE_LABEL" 
-          description="MOD_BRAINFORGE_GOOGLEADMAPS_LOCTYPE_DESC"
+							 type="radio"
+							 class="btn-group"
+							 default="0"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_LOCTYPE_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEADMAPS_LOCTYPE_DESC"
 				>
 					<option value="0">MOD_BRAINFORGE_GOOGLEMAPS_LATLNG_OPTION</option>
 				</field>
-        <field name="maps_centrelocn" type="text"
-               default="" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_CENTRELOCN_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPSLOCN_CENTRE_DESC" />
-        <field name="maps_markertitle" type="text"
-               default="" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERTITLE_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERTITLE_DESC" />
-        <field name="maps_markerinfo" type="textarea"
-               rows="4" cols="80"
-               default="" filter="raw" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERINFO_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERINFO_CODE_DESC" />
-        <field name="maps_markericon" type="text"
-               default="" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERICON_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERICON_DESC" />
-        <field name="maps_markerlocn" type="text"
-               default="" 
-               label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERLOCN_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERLOCN_DESC" />
-        <field name="maps_zoom" type="integer"
-               default="14" first="1" last="20" step="1"
-               label="MOD_BRAINFORGE_GOOGLEMAPS_ZOOM_LABEL" 
-               description="MOD_BRAINFORGE_GOOGLEMAPS_ZOOM_DESC" />
+				<field name="maps_centrelocn" type="text"
+							 default=""
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_CENTRELOCN_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_CENTRELOCN_DESC" />
+				<field name="maps_markertitle" type="text"
+							 default=""
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERTITLE_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERTITLE_DESC" />
+				<field name="maps_markerinfo" type="textarea"
+							 rows="4" cols="80"
+							 default="" filter="raw"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERINFO_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERINFO_DESC" />
+				<field name="maps_markericon" type="text"
+							 default=""
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERICON_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERICON_DESC" />
+				<field name="maps_markerlocn" type="text"
+							 default=""
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_MARKERLOCN_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_MARKERLOCN_DESC" />
+				<field name="maps_zoom" type="integer"
+							 default="14" first="1" last="20" step="1"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_ZOOM_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_ZOOM_DESC" />
 			</fieldset>
 
 			<fieldset name="BRAINFORGE_GOOGLEMAPS_CONTROLS">
 				<field name="maps_zoomcontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_ZOOMCONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_ZOOMCONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 				<field name="maps_maptypecontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_MAPTYPECONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_MAPTYPECONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 				<field name="maps_scalecontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_SCALECONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_SCALECONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 				<field name="maps_streetviewcontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_STREETVIEWCONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_STREETVIEWCONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 				<field name="maps_rotatecontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_ROTATECONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_ROTATECONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 				<field name="maps_fullscreencontrol"
-					type="radio"
-					class="btn-group"
-					default="true"
-          label="MOD_BRAINFORGE_GOOGLEMAPS_FULLSCREENCONTROL_LABEL" 
+							 type="radio"
+							 class="btn-group"
+							 default="true"
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_FULLSCREENCONTROL_LABEL"
 				>
 					<option value="true">JON</option>
 					<option value="false">JOFF</option>
 				</field>
 			</fieldset>
-      
-			<fieldset name="advanced">
-        <field name="cache" type="list"
-          default="0"
-          label="COM_MODULES_FIELD_CACHING_LABEL"
-          description="COM_MODULES_FIELD_CACHING_DESC">
-          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-        </field>
 
-        <field name="php_condition" type="textarea" rows="8" cols="50"
-               default=""
-               label="MOD_BRAINFORGE_GOOGLEMAPS_PHP_CONDITION_LABEL"
-               description="MOD_BRAINFORGE_GOOGLEMAPS_PHP_CONDITION_DESC" />
+			<fieldset name="advanced">
+				<field name="cache" type="list"
+							 default="0"
+							 label="COM_MODULES_FIELD_CACHING_LABEL"
+							 description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field name="php_condition" type="textarea" rows="8" cols="50"
+							 default=""
+							 label="MOD_BRAINFORGE_GOOGLEMAPS_PHP_CONDITION_LABEL"
+							 description="MOD_BRAINFORGE_GOOGLEMAPS_PHP_CONDITION_DESC" />
 			</fieldset>
 		</fields>
 	</config>
 
-  <updateservers>
-    <server type="extension" priority="1" name="GoogleMaps by BrainforgeUK">
+	<updateservers>
+		<server type="extension" priority="1" name="GoogleMaps by BrainforgeUK">
 			https://brainforge.co.uk/component/bfupdater?element=mod_bfgooglemaps.xml
 		</server>
-  </updateservers>
+	</updateservers>
 </extension>
